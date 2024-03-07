@@ -1,4 +1,4 @@
-.remove-assignment-content {
+.hero {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   text-align: center;
@@ -6,12 +6,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+  }
+  
+
 
 .hero-container {
-  background-color: #403d58;
-  color: #fff;
+  background-image: url(../assets/HeroShark.jpg);
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
 
 .content-container {
