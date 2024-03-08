@@ -72,56 +72,8 @@
 
 .footer-container {
   background-color: #f2efea;
-  position: relative; /* Keep footer in the normal flow of the document */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center-align children horizontally */
-  justify-content: center; /* Center-align children vertically */
-  padding: 10px; /* Padding around the content */
-  overflow: hidden;
-  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
-
-.footer {
-  text-align: center; /* Center-align text */
-  color: #444; /* Dark grey text */
-}
-
-.footer-links {
-  list-style-type: none; /* Remove bullet points from the list */
-  margin: 10px 0; /* Add margin above and below the list */
-  text-align: center; /* Center-align list items */
-}
-
-.footer-links li {
-  display: inline; /* Display list items in a line */
-  margin-right: 10px; /* Right margin for spacing between links */
-}
-
-.footer-links a {
-  color: #444; /* Dark grey link color */
-  text-decoration: none; /* No underline on links */
-  font-size: 14px; /* Font size for links */
-}
-
-.footer-links a:hover {
-  text-decoration: underline; /* Underline on hover for visual feedback */
-}
-
-/* Footer Google Map */
-.google-map {
-  margin-top: 20px; /* Margin above the map */
-  width: 100%; /* Full width */
-  max-width: 600px; /* Maximum width */
-  height: 450px; /* Height of the map */
-}
-
-/* Responsiveness for smaller screens */
-@media (max-width: 600px) {
-  .google-map iframe {
-    width: 100%; /* Full width on small screens */
-    height: 300px; /* Adjusted height for small screens */
-  }
-}
-
-
