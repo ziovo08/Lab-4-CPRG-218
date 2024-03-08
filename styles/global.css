@@ -19,3 +19,20 @@
   background-color: #EEEEEE;
   padding: 3rem 1rem;
 }
+
+
+
+/* Mobile Devices  */
+@media only screen and (max-width: 767px) {
+  /* Your CSS for mobile devices */
+}
+
+/* Tablets  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your CSS for tablet devices */
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 1024px) {
+  /* Your CSS for desktop devices */
+}

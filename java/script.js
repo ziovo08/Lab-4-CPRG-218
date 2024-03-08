@@ -29,7 +29,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-res.cookie('name', 'value', {
-    sameSite: 'none',
-    secure: true
+
+
+
+
+
+
+/* button */
+document.addEventListener('DOMContentLoaded', function() {
+    var biteButton = document.querySelector('.bite-button');
+    biteButton.addEventListener('click', function() {
+        alert('You clicked the Bite button!');
+        // You can add more interactive behaviors here
+    });
 });

@@ -1,66 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
 .text-content {
-  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   text-align: center;
-  position: absolute;
+  position: relative;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  }
-  
+}
 
+
+.accordion-text-content {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.hero-container, .content-container {
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
 
 .hero-container {
   background-image: url(../assets/HeroShark.jpg);
-  color: #fff;
   height: 100vh;
-
-  /* hero image styling */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
 }
 
 .content-container {
-  background-color: #dbd56e;
   height: 600px;
+  background-image: url(../assets/WaterShark.jpg);
 }
 
 .accordion-container {
-  background-color: #5f80d2;
+  background-color: skyblue;
   color: #fff;
   height: 600px;
 }
 
 .accordion {
-    background-color: #eee; /* Light grey background */
-    color: #444; /* Dark grey text */
-    cursor: pointer; /* Changes the mouse cursor to a pointer */
-    padding: 18px; /* Top and bottom padding */
-    width: 100%; /* Full width */
-    border: none; /* No border */
-    text-align: left; /* Text aligned to the left */
-    outline: none; /* No outline */
-    font-size: 15px; /* Font size */
-    transition: 0.4s; /* Adds animation when clicked */
-  }
-  
-  /* Change background color when moving over button */
-  .accordion:hover {
-    background-color: #ccc; /* Darker grey */
-  }
-  
-  /* Style to add for the active state (optional) */
-  .accordion.active {
-    background-color: #ccc; /* Darker grey */
-    color: white; /* White text */
-  }
-  
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: 0.4s;
+}
 
+.accordion:hover {
+  background-color: #ccc;
+}
 
+.accordion.active {
+  background-color: #ccc;
+  color: white;
+}
 
 .panel {
   padding: 0 18px;
@@ -76,4 +83,57 @@
   position: relative;
   text-align: center;
   padding: 20px;
+}
+
+.google-map {
+  padding: 10px;
+}
+
+.bite-button {
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
+  
+}
+
+
+.bite-button:hover {
+  background-color: #0056b3; 
+}
+
+/* media queries */
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  .hero-container {
+      background-image: url(../assets/HeroShark.jpg);
+  }
+  .content-container {
+      background-image: url(../assets/WaterShark.jpg);
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-container {
+      background-image: url(../assets/HeroShark.jpg);
+  }
+  .content-container {
+      background-image: url(.../assets/WaterShark.jpg);
+  }
+}
+
+/* Desktop Devices  */
+@media only screen and (min-width: 1024px) {
+  .hero-container {
+      background-image: url(../assets/HeroShark.jpg);
+  }
+  .content-container {
+      background-image: url(../assets/WaterShark.jpg);
+  }
 }
