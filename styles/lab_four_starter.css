@@ -37,7 +37,7 @@ body {
 
 .content-container {
   height: 600px;
-  background-image: url(../assets/WaterShark.jpg);
+  background-image: url(./assets/WaterShark.jpg);
 }
 
 .accordion-container {
